@@ -1,0 +1,3 @@
+sudo apt install liboctave-dev
+
+pkg load control
