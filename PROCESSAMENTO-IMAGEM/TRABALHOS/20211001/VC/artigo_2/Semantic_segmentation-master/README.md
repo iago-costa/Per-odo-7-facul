@@ -52,3 +52,4 @@ To implement Semantic segmentation on images and videos using OpenCV and deep le
 ![Output2](https://github.com/gayathri-venu/Semantic_segmentation/blob/master/output/output2.png)
 
 
+python3 segment_video.py -m ./enet-cityscapes/enet-model.net -c ./enet-cityscapes/enet-classes.txt -v ./videos/massachusetts.mp4 -o ./output/output1.avi
