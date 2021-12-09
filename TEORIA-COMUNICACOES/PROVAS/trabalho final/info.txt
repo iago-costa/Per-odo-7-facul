@@ -1,0 +1,31 @@
+O trabalho consiste em implementar um circuito, em ambiente simulado, 
+que represente um transmissor de modulação em amplitude. 
+A modulação fica a critério da equipe, mas deve ser uma das modulações vistas até o momento. 
+A equipe pode utilizar o simulador de circuitos que quiser.
+Deve ser feita a implementação do circuito transmissor nesse ambiente simulado, 
+e então gerado um relatório.
+As equipes devem ter até 6 pessoas, e o relatório deve ser entregue, 
+aqui pelo Google Classroom, até o fim do dia 17/12/2021.
+
+https://docs.google.com/document/d/1UhYahVPd47gWXAAL2_O-qR7QjMZLLCbI3_IySH7x_RE/edit
+https://www.youtube.com/watch?v=53sLOB49YRk
+https://www.youtube.com/watch?v=fFPUGP0tQ3w - DSB-SC
+
+https://www.youtube.com/watch?v=UF-P37Ym3-o - DSB-SC Script
+
+Modulação AM DSB-SC
+Double-sideband suppressed-carrier transmission
+Dupla banda lateral com portadora suprimida
+Demodulador mais complexo
+onda portadora, em cima da qual viaja o sinal a ser transmitido.
+
+LTspice IV installation tutorial Ubuntu
+https://www.youtube.com/watch?v=dK3BBFRvMqs
+https://github.com/leoam/OpCAD
+
+
+MONTE UM CIRCUITO MODULADOR AM | Vídeo Aula #257
+https://www.youtube.com/watch?v=fD8VIfTwcvo
+
+Calculo da frequência da portadora.
+1/(2*pi*sqrt(L*C))
