@@ -10,7 +10,6 @@ aqui pelo Google Classroom, até o fim do dia 17/12/2021.
 https://docs.google.com/document/d/1UhYahVPd47gWXAAL2_O-qR7QjMZLLCbI3_IySH7x_RE/edit
 https://www.youtube.com/watch?v=53sLOB49YRk
 https://www.youtube.com/watch?v=fFPUGP0tQ3w - DSB-SC
-
 https://www.youtube.com/watch?v=UF-P37Ym3-o - DSB-SC Script
 
 Modulação AM DSB-SC
@@ -24,8 +23,20 @@ https://www.youtube.com/watch?v=dK3BBFRvMqs
 https://github.com/leoam/OpCAD
 
 
+AM DSB
 MONTE UM CIRCUITO MODULADOR AM | Vídeo Aula #257
 https://www.youtube.com/watch?v=fD8VIfTwcvo
 
+ANÁLISE DE MODULAÇÃO AM
+https://www.youtube.com/watch?v=6nlzJ5uWBSk
+
+MODULAÇÃO AM DOUBLE SIDE BAND | Fast Lesson #80
+https://www.youtube.com/watch?v=SS1KwsH1tlg
+
 Calculo da frequência da portadora.
 1/(2*pi*sqrt(L*C))
+
+
+/root/.wine/drive_c/Program Files/LTC/LTspiceXVII
+
+wine XVIIx64.exe
