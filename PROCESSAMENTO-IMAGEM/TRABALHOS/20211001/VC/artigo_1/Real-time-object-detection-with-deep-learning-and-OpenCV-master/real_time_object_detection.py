@@ -12,10 +12,10 @@ import cv2
 
 # construct the argument parse and parse the arguments
 ap = argparse.ArgumentParser()
-# ap.add_argument("-p", "--prototxt", required=True,
-# 	help="path to Caffe 'deploy' prototxt file")
-# ap.add_argument("-m", "--model", required=True,
-# 	help="path to Caffe pre-trained model")
+ap.add_argument("-p", "--prototxt", required=True,
+	help="path to Caffe 'deploy' prototxt file")
+ap.add_argument("-m", "--model", required=True,
+	help="path to Caffe pre-trained model")
 ap.add_argument("-c", "--confidence", type=float, default=0.2,
 	help="minimum probability to filter weak detections")
 args = vars(ap.parse_args())
@@ -37,15 +37,27 @@ net = cv2.dnn.readNetFromCaffe('MobileNetSSD_deploy.prototxt.txt', 'MobileNetSSD
 # and initialize the FPS counter
 print("[INFO] starting video stream...")
 vs = VideoStream(src=0).start()
+# carregar vídeo no opencv
+# vs = cv2.VideoCapture('video.mp4')
+
 time.sleep(2.0)
 fps = FPS().start()
+
+
 
 # loop over the frames from the video stream
 while True:
 	# grab the frame from the threaded video stream and resize it
 	# to have a maximum width of 400 pixels
 	frame = vs.read()
-	frame = imutils.resize(frame, width=400)
+	# frame = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
+	# frame = cv2.cvtColor(frame, cv2.COLOR_BGR2HSV)
+	frame = cv2.cvtColor(frame, cv2.COLOR_BGR2HLS)
+	# frame = np.array(frame)
+	# frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
+
+	frame = imutils.resize(frame, width=700)
+
 
 	# grab the frame dimensions and convert it to a blob
 	(h, w) = frame.shape[:2]
@@ -81,6 +93,8 @@ while True:
 			y = startY - 15 if startY - 15 > 15 else startY + 15
 			cv2.putText(frame, label, (startX, y),
 				cv2.FONT_HERSHEY_SIMPLEX, 0.5, COLORS[idx], 2)
+
+	
 
 	# show the output frame
 	cv2.imshow("Frame", frame)

@@ -1,21 +1,22 @@
 Circuit: * Z:\home\mestrezen\Documents\graduacao\Per-odo-7-facul\TEORIA-COMUNICACOES\PROVAS\trabalho final\MOD-AM-DSB.asc
 
+WARNING: Less than two connections to node NC_01.  This node is used by B1.
 .OP point found by inspection.
 
-Date: Sun Dec 12 19:38:12 2021
-Total elapsed time: 0.598 seconds.
+Date: Mon Dec 13 02:05:14 2021
+Total elapsed time: 0.639 seconds.
 
 tnom = 27
 temp = 27
 method = modified trap
-totiter = 58166
-traniter = 58166
-tranpoints = 20959
-accept = 13764
-rejected = 7195
-matrix size = 7
+totiter = 103816
+traniter = 103816
+tranpoints = 39740
+accept = 27378
+rejected = 12362
+matrix size = 11
 fillins = 0
 solver = Normal
-Matrix Compiler1: 196 bytes object code size  0.2/0.1/[0.1]
-Matrix Compiler2: 453 bytes object code size  0.1/0.2/[0.1]
+Matrix Compiler1: 396 bytes object code size  0.2/0.1/[0.1]
+Matrix Compiler2: 693 bytes object code size  0.1/0.1/[0.1]
 

@@ -27,16 +27,26 @@ AM DSB
 MONTE UM CIRCUITO MODULADOR AM | Vídeo Aula #257
 https://www.youtube.com/watch?v=fD8VIfTwcvo
 
-ANÁLISE DE MODULAÇÃO AM
-https://www.youtube.com/watch?v=6nlzJ5uWBSk
-
 MODULAÇÃO AM DOUBLE SIDE BAND | Fast Lesson #80
 https://www.youtube.com/watch?v=SS1KwsH1tlg
 
+ANÁLISE DE MODULAÇÃO AM
+https://www.youtube.com/watch?v=6nlzJ5uWBSk
+
 Calculo da frequência da portadora.
 1/(2*pi*sqrt(L*C))
+https://pt.symbolab.com/solver/step-by-step/%5Cfrac%7B1%7D%7B2%5Ccdot%20pi%5Ccdot%5Csqrt%7B50%5Ccdot%2010%5E%7B-6%7D%5Ccdot50%5Ccdot10%5E%7B-9%7D%7D%7D?or=input
+Escolhe um valor de L e C arbitrário para ver qual frequência na portadora para utilizar
 
 
-/root/.wine/drive_c/Program Files/LTC/LTspiceXVII
+Calculo para resistêmcia na demodulação
+f = 5000 (valor padrão de mercado) = 1/(2*pi*R*C) - Equação filtro passa-baixas clássico
+equação fica: R = 1/(2*pi*f*C) = 1/(2*pi*5000*C)
+https://pt.symbolab.com/solver/step-by-step/%5Cfrac%7B1%7D%7B2%5Ccdot%20pi%5Ccdot5000%5Ccdot50%5Ccdot10%5E%7B-9%7D%7D?or=input
 
-wine XVIIx64.exe
+
+Comandos para abrir o ltspice no linux
+
+su;
+cd /root/.wine/drive_c/'Program Files'/LTC/LTspiceXVII;
+wine XVIIx64.exe;
